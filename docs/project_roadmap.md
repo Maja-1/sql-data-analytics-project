@@ -2,7 +2,8 @@
 
 This document provides an overview of the methodology for Exploratory Data Analysis (EDA) and advanced analytics. Through a series of steps, we will learn how to explore a database, understand its data structure, and extract meaningful insights.
 
-![Project Roadmap](Project Roadmap.jpg)
+
+<img width="2141" height="916" alt="Project Roadmap" src="https://github.com/user-attachments/assets/ed6eb456-e940-4f69-9e67-de0a3dbee831" />
 
 ---
 
