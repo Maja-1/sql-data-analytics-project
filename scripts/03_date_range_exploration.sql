@@ -3,7 +3,7 @@
 Date Range Exploration 
 ===============================================================================
 Purpose:
-    - To determine the temporal boundaries of key data points.
+    - Identify earliest and latest dates (boundaries)
     - To understand the range of historical data.
 
 SQL Functions Used:
