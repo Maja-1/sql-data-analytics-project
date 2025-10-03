@@ -20,6 +20,14 @@ SELECT DISTINCT
 FROM gold.dim_customers
 ORDER BY country;
 
+/*
+The list clearly outlines your current geographic reach, identifying seven distinct countries from which your customers originate:
+
+Canada, United States, France, Germany, United Kingdom, Australia.
+
+*/
+
+
 -- Retrieve a list of unique categories, subcategories, and products
 SELECT DISTINCT 
     category, 
@@ -27,3 +35,13 @@ SELECT DISTINCT
     product_name 
 FROM gold.dim_products
 ORDER BY category, subcategory, product_name;
+
+/*
+This query listed the unique combinations of categories, subcategories, and products from the gold.dim_products 
+table. Four primary product categories were identified: Accessories, Bikes, Clothing, and Components. The Bikes category is 
+the most extensive, featuring three subcategories (Mountain, Road, Touring) with numerous products differentiated by color 
+and size. Components includes the largest number of subcategories, such as Brakes, Forks, Frames, and Wheels, while 
+Accessories and Clothing are also highly segmented. A small group of products, notably various Pedals, were also found 
+but are currently listed without an assigned category or subcategory (NULL values).
+
+*/
