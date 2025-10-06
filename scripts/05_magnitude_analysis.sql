@@ -20,6 +20,14 @@ FROM gold.dim_customers
 GROUP BY country
 ORDER BY total_customers DESC;
 
+/*
+
+The data clearly shows the United States is our biggest market, with many more customers than any other country. 
+Australia is the second most important market, while the UK, France, Germany, and Canada all have a similar, 
+medium-sized customer base.
+
+*/
+
 -- Find total customers by gender
 SELECT
     gender,
@@ -27,6 +35,11 @@ SELECT
 FROM gold.dim_customers
 GROUP BY gender
 ORDER BY total_customers DESC;
+
+/*
+The customer base shows an extremely balanced distribution between male (9,341) and female (9,128) users, 
+indicating equal general appeal of our product or service. 
+*/
 
 -- Find total products by category
 SELECT
@@ -36,6 +49,12 @@ FROM gold.dim_products
 GROUP BY category
 ORDER BY total_products DESC;
 
+/*
+The product assortment is heavily concentrated in the Components (127) and Bikes (97) categories, 
+establishing the business as a primary retailer of core cycling equipment. Clothing (35) and Accessories (29) 
+represent smaller, secondary categories that should be further analyzed for potential inventory expansion.
+*/
+
 -- What is the average costs in each category?
 SELECT
     category,
@@ -43,6 +62,15 @@ SELECT
 FROM gold.dim_products
 GROUP BY category
 ORDER BY avg_cost DESC;
+
+/*
+The data confirms that Bikes have a significantly dominant average cost of $949, making efficient inventory and 
+sales management for this category critical for financial success. Components ($264) represent a moderate-cost inventory,
+while Clothing ($24) and Accessories ($13) act as low-cost, high-volume segments ideal for cross-selling strategies. 
+Finally, the NULL category with a cost of $28 demands immediate data cleanup to ensure all product costs are accurately 
+assigned for proper financial reporting.
+
+*/
 
 -- What is the total revenue generated for each category?
 SELECT
