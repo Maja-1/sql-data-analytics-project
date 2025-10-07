@@ -23,6 +23,13 @@ LEFT JOIN gold.dim_products p
 GROUP BY p.product_name
 ORDER BY total_revenue DESC;
 
+/*
+Every product in the top five ranking is a variation of the Mountain-200 model, indicating extreme customer preference for 
+this specific line. Total revenue for these five items alone exceeds $6.6 million, making the Mountain-200 series the single
+most important product family for the company's income. The focus must be on maintaining strong inventory and efficient 
+production for all sizes and colors of the Mountain-200 to secure future revenue growth.
+*/
+
 -- Complex but Flexibly Ranking Using Window Functions
 SELECT *
 FROM (
