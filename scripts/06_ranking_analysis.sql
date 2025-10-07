@@ -1,4 +1,4 @@
-/*
+d/*
 ===============================================================================
 Ranking Analysis
 ===============================================================================
@@ -53,6 +53,15 @@ LEFT JOIN gold.dim_products p
     ON p.product_key = f.product_key
 GROUP BY p.product_name
 ORDER BY total_revenue;
+
+/*
+These five products represent the lowest revenue generators, with Racing Socks being the poorest performers. The most 
+immediate action is to investigate whether these items are low-profit margin items or simply have low demand. 
+Since most of these are accessories (socks, patch kits, wash), they might be considered complementary items, 
+but their low revenue signals they are not selling well, or they are very low-priced. The team should consider 
+whether to discontinue the poor-performing socks or launch a promotion to clear the existing inventory.
+
+*/
 
 -- Find the top 10 customers who have generated the highest revenue
 SELECT TOP 10
