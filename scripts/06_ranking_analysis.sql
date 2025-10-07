@@ -78,6 +78,15 @@ GROUP BY
     c.last_name
 ORDER BY total_revenue DESC;
 
+/*
+The results clearly identify a small, extremely high-value segment of Most Valuable Customers (MVCs), with the top 10 
+generating over $131,000 in total revenue. The remarkable revenue tie between Nichole Nara and Kaitlyn Henderson highlights
+their loyalty and purchasing power. The sales and marketing teams should immediately use this list to implement a dedicated
+customer strategy such as exclusive product previews, personalized discounts, or a VIP loyalty program to ensure these top
+spenders remain highly engaged.
+
+*/
+
 -- The 3 customers with the fewest orders placed
 SELECT TOP 3
     c.customer_key,
@@ -92,3 +101,9 @@ GROUP BY
     c.first_name,
     c.last_name
 ORDER BY total_orders ;
+
+/*
+These customers represent one-time buyers who have completed a single transaction and not returned. This small segment 
+signals a potential customer retention issue within the overall customer base.
+
+*/
