@@ -31,13 +31,15 @@ FROM
 ) t
 
 /*
-The cumulative (running total) sales show strong, consistent growth, increasing 
-from $43,419 in December 2010 to over $29 million by January 2014, indicating a 
-very successful overall business expansion. However, this growth has occurred 
-alongside a continuous and significant decline in the average sales price (the 
-moving average price), which dropped from $$$3,101 to $1,745.
+This business is doing very well overall. Total sales have grown hugely, increasing from about $43,000 in late 2010 to over 
+$29 million by 2014. This shows successful business growth.
 
-This suggests the company's revenue growth is primarily driven by selling a much 
-higher volume of units, potentially through lower pricing strategies, discounted 
-sales, or a shift in the sales mix towards less expensive products.
+However, we see a clear trade-off:
+
+As total sales went up, the average price of what we sold went down dramatically, dropping from about $3,100 to $1,745.
+
+This means that the big increase in revenue is likely because we are selling many more items—not because we are selling 
+items at a higher price. We might be using lower prices, more discounts, or selling more cheap products to drive this 
+high volume.
 */
+
