@@ -26,6 +26,16 @@ WHERE order_date IS NOT NULL
 GROUP BY YEAR(order_date), MONTH(order_date)
 ORDER BY YEAR(order_date), MONTH(order_date);
 
+/*
+2013 was the most successful year because the company brought in the most customers and made the most money. 
+This record high was likely built on selling a very large quantity of lower-priced items. However, sales completely 
+collapsed in 2014, wiping out all the recent growth. 
+
+gold addditional We must immediately investigate the cause of the 2014 failure 
+and understand what exactly was sold during the 2013 boom.
+
+*/
+
 -- DATETRUNC()
 SELECT
     DATETRUNC(month, order_date) AS order_date,
@@ -47,3 +57,4 @@ FROM gold.fact_sales
 WHERE order_date IS NOT NULL
 GROUP BY FORMAT(order_date, 'yyyy-MMM')
 ORDER BY FORMAT(order_date, 'yyyy-MMM');
+
