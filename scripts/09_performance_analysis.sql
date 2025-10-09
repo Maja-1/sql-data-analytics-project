@@ -50,3 +50,15 @@ SELECT
     END AS py_change
 FROM yearly_product_sales
 ORDER BY product_name, order_year;
+
+/*
+The data shows that 2013 was the best year for sales for almost all products, with sales much higher than usual and a big 
+jump from the year before (2012). However, in 2014, sales dropped quickly for most products, falling below average and 
+significantly lower than in 2013.
+
+A few products, like some in the 'Mountain-100' series, had average sales in the single year we tracked them (2011). 
+Other series, like 'Mountain-200' and 'Road-150', had high sales in 2011, continuing a big increase from a low starting 
+point in 2010.
+
+*/
+
