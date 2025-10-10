@@ -66,4 +66,23 @@ FROM (
     FROM customer_spending
 ) AS segmented_customers
 GROUP BY customer_segment
+
 ORDER BY total_customers DESC;
+
+/*
+Key Takeaways from 
+Here are the most important insights from the product cost and customer segmentation data:
+
+1. Product Pricing
+Focus on Low Cost: Our product line is heavily concentrated on affordable items. The majority of inventory is priced under
+500 (211 products), indicating the business operates mainly in the low to mid-range market.
+
+2. Customer Base Structure
+New Customer Growth: The business has seen significant recent growth, as the 'New' segment (customers with less than one 
+year of history) is by far the largest group (14,631 customers).
+
+Conversion is Key: The most valuable customer segments—'VIP' (high-spenders) and 'Regular'—are much smaller. The immediate 
+business focus should be on creating programs to retain these new customers and encourage them to spend more to become 
+long-term, established customers.
+
+*/
